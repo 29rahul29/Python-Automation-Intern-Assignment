@@ -23,7 +23,7 @@ def generate_message(row):
     return message
 
 def main():
-    df = pd.read_excel(r'D:\VS Code\Intern Project\Data.xlsx')
+    df = pd.read_excel('Data.xlsx')
 
     df['message'] = df.apply(generate_message, axis=1)
     os.makedirs('user_messages', exist_ok=True)
