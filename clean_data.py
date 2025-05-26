@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_excel(r'D:\VS Code\Intern Project\Data.xlsx')
+df = pd.read_excel('Data.xlsx')
 
 df = df.drop_duplicates(subset='email')
 
